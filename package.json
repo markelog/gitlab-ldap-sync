@@ -1,0 +1,32 @@
+{
+  "name": "gitlab-ldap-sync",
+  "version": "0.0.1",
+  "description": "gitlab sync groups with ldap",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "gitlab-ldap-sync": "./bin/gilab-ldap-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/markelog/gitlab-ldap-sync"
+  },
+  "author": "Oleg Gaidarenko <markelog@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "activedirectory": "^0.7.2",
+    "commander": "^2.19.0",
+    "jsonschema": "^1.2.4",
+    "lodash": "^4.17.11",
+    "node-gitlab": "^1.6.1",
+    "ora": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.14.1",
+    "eslint-config-sexy": "^5.0.0",
+    "mocha": "^6.0.2"
+  }
+}

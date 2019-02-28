@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+const program = require('commander');
+
+const cli = require('../cli')
+
+program
+  .version(require('../package.json').version)
+  .usage('[options]')
+  .description('Sync ldap groups with gitlab, or just use https://docs.gitlab.com/ee/administration/auth/ldap-ee.html')
+  .option('-c, --config <ports>', 'config path')
+  .parse(process.argv);
+
+(async () => {
+  try {
+    await cli(program);
+  } catch (error) {
+    error.log.fail(error.stack);
+
+    process.exit(error.exitCode || 1);
+  }
+})();
