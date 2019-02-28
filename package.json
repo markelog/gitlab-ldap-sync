@@ -1,7 +1,7 @@
 {
   "name": "gitlab-ldap-sync",
   "version": "0.0.1",
-  "description": "gitlab sync groups with ldap",
+  "description": "Sync ldap groups with gitlab ones",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
