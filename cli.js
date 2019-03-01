@@ -30,7 +30,7 @@ async function exec(program, log) {
 
 
   // eslint-disable-next-line
-  const config = require(program.config);
+  const config = require(`${process.cwd()}/${program.config}`);
   validate(config);
 
   const sync = new Sync(config);
