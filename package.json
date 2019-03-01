@@ -6,7 +6,7 @@
     "test": "mocha"
   },
   "bin": {
-    "gitlab-ldap-sync": "./bin/gilab-ldap-sync"
+    "gitlab-ldap-sync": "./bin/gitlab-ldap-sync"
   },
   "repository": {
     "type": "git",
